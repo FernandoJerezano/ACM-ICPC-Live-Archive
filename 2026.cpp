@@ -1,7 +1,7 @@
 // Problema:	2026 - Generating permutations.cpp
-// Autor: 		FernandoJerezano
-// Fecha: 		26-Agosto-2017
-// Origen: 		Regionals 2000 :: Latin America - Mexico and Central America
+// Autor: 	FernandoJerezano
+// Fecha: 	26-Agosto-2017
+// Origen: 	Regionals 2000 :: Latin America - Mexico and Central America
 #include <iostream>
 #include <bits/stdc++.h>
 
