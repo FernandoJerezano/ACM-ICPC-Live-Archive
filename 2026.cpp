@@ -1,7 +1,7 @@
-// Problema:	2026 - Generating permutations.cpp
-// Autor: 	FernandoJerezano
-// Fecha: 	26-Agosto-2017
-// Origen: 	Regionals 2000 :: Latin America - Mexico and Central America
+// Problema:		2026 - Generating permutations.cpp
+// Autor: 		FernandoJerezano
+// Fecha: 		26-Agosto-2017
+// Origen: 		Regionals 2000 :: Latin America - Mexico and Central America
 #include <iostream>
 #include <bits/stdc++.h>
 
@@ -29,17 +29,8 @@ int main(){
 	vector<int>entrada;
 	entrada.clear();
 
-	// We read the input and store it in entrada
-	while(scanf("%d",&n)){
-		if(n!=0)
-			entrada.push_back(n);
-		else
-			break;
-	}
-
-	for(int i=0;i<entrada.size()-1;i++){
-		vec.clear();
-		n = entrada[i];
+	scanf("%d",&n);
+	while(true){
 		if(n==1){
 			printf("Run %d n=%d\n",c++,n);
 			printf("1\n");
@@ -55,20 +46,13 @@ int main(){
 			// This function gives us the next permutation
 			}while(next_permutation(vec.begin(),vec.end()));
 		}
-		printf("\n");
-	}
 
-	// Last input
-	n = entrada[entrada.size()-1];
-	vec.clear();
-	vec.assign(n,0);
-	for(int i=0;i<n;i++){
-		vec[i] = i+1;
+		scanf("%d",&n);
+		if(n!=0)
+			printf("\n");
+		else
+			break;	
 	}
-	printf("Run %d n=%d\n",c++,n);
-	do{
-		print();
-	}while(next_permutation(vec.begin(),vec.end()));
 
 	return 0;
 }
