@@ -1,4 +1,4 @@
-// Problema:		2026 - Generating permutations.cpp
+// Problema:		2026 - Generating permutations
 // Autor: 		FernandoJerezano
 // Fecha: 		26-Agosto-2017
 // Origen: 		Regionals 2000 :: Latin America - Mexico and Central America
